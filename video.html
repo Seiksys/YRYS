@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Love Video</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link href="java.js">
+    <title>Our Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #ececec;
+            ;
+        }
+
+        .uploadButton {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .uploadButton:hover {
+            transform: scale(1.05);
+        }
+
+        .photo {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .photo:hover {
+            transform: scale(1.05);
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .deleteButton {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .deleteButton:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* 标题样式 */
+        .title {
+            font-size: 36px;
+            color: #e63946;
+            /* 红色 */
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* 爱心图标样式 */
+        .heart-icon {
+            color: #e63946;
+            /* 红色 */
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        /* 情侣动画样式 */
+        .couple-animation {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .couple-animation img {
+            width: 200px;
+            height: auto;
+        }
+
+        /* 爱情语录样式 */
+        .love-quote {
+            font-style: italic;
+            text-align: center;
+            color: #e63946;
+            /* 红色 */
+            margin-top: 50px;
+        }
+    </style>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
+        <div class="container-fluid">
+            <!-- 将导航品牌和折叠按钮放置在左侧 -->
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand ms-4 fs-2 fw-bold fst-italic" href="index.html">YR&YS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- 将导航链接和搜索表单放置在右侧 -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav me-5 ">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link disabled" aria-disabled="true"><i class="bi bi-balloon-heart-fill">I Love
+                                You</i></a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="index.html"><i class="bi bi-person-standing-dress">Home</i></a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="yr.html"><i class="bi bi-person-standing-dress">YR</i></a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="ys.html"><i class="bi bi-person-standing">Record</i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding-top: 100px;">
+        <video  controls src="images/myvideo.mp4" alt="a video" style="width: 100%; height: 90vh;" ></video>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
